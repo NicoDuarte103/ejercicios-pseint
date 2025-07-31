@@ -1,0 +1,11 @@
+El ordenamiento de burbuja (Bubble Sort en inglés) es un sencillo algoritmo de ordenamiento. Funciona revisando cada elemento de la lista que va a ser ordenada con el siguiente, intercambiándolos de posición si están en el orden equivocado. Es necesario revisar varias veces toda la lista hasta que no se necesiten más intercambios, lo cual significa que la lista está ordenada. Este algoritmo obtiene su nombre de la forma con la que suben por la lista los elementos durante los intercambios, como si fueran pequeñas «burbujas». También es conocido como el método del intercambio directo. Dado que solo usa comparaciones para operar elementos, se lo considera un algoritmo de comparación, siendo uno de los más sencillos de implementar. 
+https://es.wikipedia.org/wiki/Ordenamiento_de_burbuja
+para x = 2 hasta 5 hacer
+    para a =1 hasta 4 hacer
+        si vector (a) >vector (a+1)
+            temp = vector (a)
+            vector (a) = vector (a+1)
+            vector (a+1) = temp
+        finsi
+    finpara
+finpara

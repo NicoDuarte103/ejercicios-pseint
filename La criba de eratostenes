@@ -1,0 +1,26 @@
+La criba de Eratóstenes es un algoritmo que permite hallar todos los números primos menores que un número natural dado. Se forma una tabla con todos los números naturales comprendidos entre 2 y n, y se van tachando los números que no son primos de la siguiente manera: Comenzando por el 2, se tachan todos sus múltiplos; comenzando de nuevo, cuando se encuentra un número entero que no ha sido tachado, ese número es declarado primo, y se procede a tachar todos sus múltiplos, así sucesivamente. El proceso termina cuando el cuadrado del siguiente número confirmado como primo es mayor que n. 
+Proceso de criba
+
+Determinemos, mediante el siguiente ejemplo, el proceso para determinar la lista de los números primos menores de 20.
+
+    Primer paso: listar los números naturales comprendidos entre 2 hasta el número que se desee, en este caso, hasta el 20.
+
+        2 	3 	4 	5 	4 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 
+
+    2. Segundo paso: se toma el primer número no rayado ni marcado, como número primo.
+
+        2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 
+
+    3. Tercer paso: se tachan todos los múltiplos del número que se acaba de indicar como primo.
+
+        2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 
+
+    4. Cuarto paso: si el cuadrado del primer número que no ha sido rayado ni marcado es inferior a 20, entonces se repite el segundo paso. Si no, el algoritmo termina, y todos los enteros no tachados son declarados primos.
+
+Como 3² = 9 < 20, se vuelve al segundo paso:
+
+        2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 
+
+En el cuarto paso, el primer número que no ha sido tachado ni marcado es 5. Como su cuadrado es mayor que 20, el algoritmo termina y se consideran primos todos los números que no han sido tachados.
+
+Como resultado se obtienen los números primos comprendidos entre 2 y 20, y estos son: 2, 3, 5, 7, 11, 13, 17, 19. 
